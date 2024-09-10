@@ -6,6 +6,8 @@ on:
 jobs:
   build_pandoc:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     steps:
       - name: clone
         uses: actions/checkout@v4
